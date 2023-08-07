@@ -140,4 +140,4 @@ data
 We provide inference model for each task at [link](https://github.com/openai/CLIP).
 
 ### Demo
-![Trad-ReID](https://github.com/instruct-ReID/instructReID/blob/main/cc_reid.gif)
+![image](https://github.com/instruct-ReID/instructReID/blob/main/cc_reid.gif)
