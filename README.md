@@ -140,11 +140,11 @@ data
 We provide inference model for each task at [link](https://github.com/openai/CLIP).
 
 ### Demo
-Trad-ReID
+Trad-ReID  
 ![image](https://github.com/instruct-ReID/instructReID/blob/main/trad_reid.gif)
-CC-ReID
+CC-ReID  
 ![image](https://github.com/instruct-ReID/instructReID/blob/main/cc_reid.gif)
-CTCC-ReID
+CTCC-ReID  
 ![image](https://github.com/instruct-ReID/instructReID/blob/main/ctcc_reid.gif)
-LI-ReID
+LI-ReID  
 ![image](https://github.com/instruct-ReID/instructReID/blob/main/li_reid.gif)
