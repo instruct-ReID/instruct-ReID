@@ -1,0 +1,7 @@
+tasks:
+    0:
+        loss_weight: 1.0
+        gres_ratio: 1
+        task_name: DataBuilder_cc
+        root_path: <your project root> + instructReID/data/vc_clothes
+        train_file_path: <your project root> + instructReID/data/vc_clothes/datalist/train.txt

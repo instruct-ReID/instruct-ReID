@@ -1,0 +1,30 @@
+tasks:
+  0:
+    loss_weight: 1.0
+    gres_ratio: 1
+    task_name: DataBuilder_ctcc
+    
+    root_path: <your project root> + instructReID/data/real1
+    train_file_path: <your project root> + instructReID/data/real1/datalist/train.txt
+  1:
+    loss_weight: 1.0
+    gres_ratio: 1
+    task_name: DataBuilder_sc
+    
+    root_path: <your project root> + instructReID/data/market
+    train_file_path: <your project root> + instructReID/data/market/datalist/train.txt
+  2:
+    loss_weight: 1.0
+    gres_ratio: 1
+    task_name: DataBuilder_cc
+    
+    root_path: <your project root> + instructReID/data/ltcc
+    train_file_path: <your project root> + instructReID/data/ltcc/datalist/train.txt
+  3:
+    loss_weight: 1.0
+    gres_ratio: 1
+    task_name: DataBuilder_attr
+    
+    root_path: <your project root> + instructReID/data/real1
+    train_file_path: <your project root> + instructReID/data/real1/datalist/train_attr.txt
+  
