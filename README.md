@@ -3,14 +3,11 @@
 This repo provides a basic training and testing framework for instruction guided person re-identification (instruct-ReID). 
 
 ### Installation
-```
-1, Download the transformers installation package from [download](https://github.com/huggingface/transformers)
-2, Add code "image_features_n = self.visual_projection(vision_outputs[0])" after line 1077 and change the line 1079 code "return image_features" to "return image_features, image_features_n" in file "./transformers/src/transformers/models/clip/modeling_clip.py"
-3, cd transformers & python setup.py install
-```
-```
-1, Download CLIP installation package from [download](https://github.com/openai/CLIP)
-2, cd CLIP & python setup.py install
+1.Download the transformers installation package from [download](https://github.com/huggingface/transformers)
+2.Add code "image_features_n = self.visual_projection(vision_outputs[0])" after line 1077 and change the line 1079 code "return image_features" to "return image_features, image_features_n" in file "./transformers/src/transformers/models/clip/modeling_clip.py"
+3.cd transformers & python setup.py install
+4.Download CLIP installation package from [download](https://github.com/openai/CLIP)
+5.cd CLIP & python setup.py install
 ```
 other requirements:
 ```
@@ -36,10 +33,8 @@ logs
     └── deit_base_distilled_patch16_224-df68dfff.pth
     └── ViT-B-32.pt
 ```
-
-```
 mkdir fashion_clip_model and download fashion_clip pretrained [model](https://github.com/patrickjohncyh/fashion-clip).
-```
+
 The file tree should be
 ```
 fashion_clip_model
@@ -54,11 +49,11 @@ fashion_clip_model
 ```
 
 ### Prepare data
-```shell
+shell
 mkdir data
 cp the dataset and annotation datalist to data directory.
 We provide OmniReID annotation datalist download [link](https://drive.google.com/file/d/1d51ENyfMjdVwfLVmdkWSnndokg3Ym6wy/view?usp=drive_linkP)
-```
+
 The file tree should be
 ```
 data
@@ -142,4 +137,3 @@ data
 
 ### inference model
 We provide inference model for each task at [link](https://github.com/openai/CLIP).
-
