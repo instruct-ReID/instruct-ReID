@@ -53,7 +53,7 @@ fashion_clip_model
 shell
 mkdir data
 cp the dataset and annotation datalist to data directory.
-We provide OmniReID annotation datalist download [link](https://drive.google.com/file/d/1d51ENyfMjdVwfLVmdkWSnndokg3Ym6wy/view?usp=drive_linkP)
+We provide OmniReID annotation datalist download [link](https://drive.google.com/file/d/1d51ENyfMjdVwfLVmdkWSnndokg3Ym6wy/view?usp=sharing)
 
 The file tree should be
 ```
@@ -137,7 +137,7 @@ data
 ```
 
 ### inference model
-We provide inference model for each task at [link](https://github.com/openai/CLIP).
+We provide inference model for each task at [link](https://drive.google.com/file/d/1y9Ruq6gM00L9UTOmYfpUc2B45ZPDcagN/view?usp=sharing)
 
 ### Demo
 Trad-ReID  
