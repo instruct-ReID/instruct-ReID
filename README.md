@@ -3,12 +3,14 @@
 This repo provides a basic training and testing framework for instruction guided person re-identification (instruct-ReID). 
 
 ### Installation
+'''
 1 Download the transformers installation package from [download](https://github.com/huggingface/transformers)
 2 Add code "image_features_n = self.visual_projection(vision_outputs[0])" after line 1077 and change the line 1079 code "return image_features" to "return image_features, image_features_n" in file "./transformers/src/transformers/models/clip/modeling_clip.py"
 3 cd transformers & python setup.py install
 4 Download CLIP installation package from [download](https://github.com/openai/CLIP)
 5 cd CLIP & python setup.py install
 6 other requirements
+'''
 ```
 ftfy
 regex
