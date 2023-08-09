@@ -27,24 +27,23 @@ def merge_sub_datasets(train_list, train_root_list):
         sub_dataset_pid = 0
         sub_dataset_pid_list = dict()
         
-        if list_file.startswith('/mnt/') or list_file.startswith('/data/'):
-            with open(list_file) as f:
-                for line in f.readlines():
-                    info = line.strip('\n').split(" ")
-                    imgs = os.path.join(prefix, info[0])
-                    clothes = os.path.join(prefix, info[1])
-                    if info[2] not in sub_dataset_pid_list.keys():
-                        pids = label_base + sub_dataset_pid
-                        sub_dataset_pid_list[info[2]] = pids
-                        sub_dataset_pid += 1
-                    else:
-                        pids = sub_dataset_pid_list[info[2]]
-                    cids = info[3]
-                    if len(info) > 4:
-                        cams = info[4]
-                        list_lines.append('{} {} {} {} {}'.format(imgs, clothes, pids, cids, cams))
-                    else:
-                        list_lines.append('{} {} {} {}'.format(imgs, clothes, pids, cids))
+        with open(list_file) as f:
+            for line in f.readlines():
+                info = line.strip('\n').split(" ")
+                imgs = os.path.join(prefix, info[0])
+                clothes = os.path.join(prefix, info[1])
+                if info[2] not in sub_dataset_pid_list.keys():
+                    pids = label_base + sub_dataset_pid
+                    sub_dataset_pid_list[info[2]] = pids
+                    sub_dataset_pid += 1
+                else:
+                    pids = sub_dataset_pid_list[info[2]]
+                cids = info[3]
+                if len(info) > 4:
+                    cams = info[4]
+                    list_lines.append('{} {} {} {} {}'.format(imgs, clothes, pids, cids, cams))
+                else:
+                    list_lines.append('{} {} {} {}'.format(imgs, clothes, pids, cids))
         label_base = label_base + sub_dataset_pid # update label_base
 
         list_lines_all.extend(list_lines)
