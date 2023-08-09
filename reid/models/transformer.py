@@ -341,6 +341,8 @@ class Transformer_DualAttn_multi(nn.Module):
         if not self.training:
             if self.net_config.test_task_type != 'sc':
                 bio_feats = self.base(x, cam_label=cam_label*0, view_label=view_label, project_feats=project_feats)
+            else:
+                bio_feats = self.base(x, cam_label=cam_label, view_label=view_label, project_feats=project_feats)
         else:
             bio_feats = self.base(x, cam_label=cam_label, view_label=view_label, project_feats=project_feats)
         
