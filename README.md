@@ -137,7 +137,7 @@ data
 ```
 
 ### inference model
-We provide inference model for each task at [link](https://drive.google.com/file/d/1y9Ruq6gM00L9UTOmYfpUc2B45ZPDcagN/view?usp=sharing)
+We provide inference model for each task at [link](https://drive.google.com/drive/folders/16AAM_89Qc_Nq4aejtbZwtKDODK2Q05Fs?usp=sharing)
 
 ### Demo
 Trad-ReID  
