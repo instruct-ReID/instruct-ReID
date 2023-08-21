@@ -133,7 +133,7 @@ data
 ### Testing
 
 ```shell
-./scripts/test.sh transformer_dualattn ${/PATH/TO/YOUR/MODEL/} ${query-txt} ${gallery-txt} ${root_path} ${test_task_type}# default 1 GPUs
+./scripts/test.sh transformer_dualattn ${/PATH/TO/YOUR/MODEL/} ${query-txt} ${gallery-txt} ${root_path} ${test_task_type}# default 1 GPUs, eg: bash ./scripts/test.sh transformer_dualattn ./checkpoints/checkpoint_24000.pth.tar ./data/market/datalist/query.txt ./data/market/datalist/query.txt ${market_dir_path} sc
 ```
 
 ### inference model
