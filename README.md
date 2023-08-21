@@ -138,7 +138,7 @@ data
 ```
 
 ### inference model
-We save the checkpoint every 6000 iterations and provide inference model at [link](https://drive.google.com/drive/folders/16AAM_89Qc_Nq4aejtbZwtKDODK2Q05Fs?usp=sharing)
+We save the checkpoint every 6000 iterations at [link](https://drive.google.com/drive/folders/16AAM_89Qc_Nq4aejtbZwtKDODK2Q05Fs?usp=sharing) You can inference on the provided models and choose the best performance.
 
 ### Demo
 Trad-ReID  
